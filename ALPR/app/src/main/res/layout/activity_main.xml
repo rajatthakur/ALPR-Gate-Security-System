@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:isScrollContainer="false"
+    android:fitsSystemWindows="true"
+    android:background="#E8EAF6"
+    android:id="@+id/scrollView">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:layout_gravity="top"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/background_card"
+        android:paddingLeft="24dp"
+        android:paddingBottom="20dp"
+        android:paddingRight="24dp">
+
+
+        <!-- Num Plate Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:hint="Enter Plate Number"
+                android:id="@+id/input_num_plate" />
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:padding="12dp"
+            android:textAllCaps="false"
+            android:text="Find Entry/Exit"
+            android:textColor="#FFFFFF"
+            android:background="@color/colorPrimary"
+            android:onClick="entryExitListener"/>
+
+        <TextView
+            android:text="ABC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#332f2f"
+            android:id="@+id/textViewOutput" />
+
+    </LinearLayout>
+
+</ScrollView>

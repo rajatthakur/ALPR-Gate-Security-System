@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form action="{%url 'formsubmit'%}" method="post">
+     {% csrf_token %}
+    Vehicle Number  <input type="text" name="car_plate" />
+    <br>
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>

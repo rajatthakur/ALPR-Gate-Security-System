@@ -1,0 +1,2 @@
+export TESSDATA_PREFIX=/usr/local/share/
+ tesseract Final_image.jpg out2
